@@ -33,5 +33,8 @@
     <dimen name="text_big_3x">80sp</dimen>
 
     <!-- App specific values -->
+    <dimen name="product_item_width">320dp</dimen>
+    <dimen name="product_item_height">380dp</dimen>
+
 
 </resources>

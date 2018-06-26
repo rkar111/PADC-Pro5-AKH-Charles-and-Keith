@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Charles and Keith</string>
     <string name="action_settings">Settings</string>
+    <string name="scarf_detail_top_handle_bag">SCARF DETAIL TOP HANDLE BAG</string>
+    <string name="online_exclusive">ONLINE EXCLUSIVE</string>
+    <string name="_8_items">8 ITEMS</string>
 </resources>
