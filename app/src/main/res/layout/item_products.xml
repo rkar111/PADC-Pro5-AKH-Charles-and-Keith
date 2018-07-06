@@ -20,7 +20,7 @@
         android:layout_below="@id/tv_online_exlcusive"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/margin_medium"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         android:src="@drawable/ck_bag_black" />
 
     <TextView

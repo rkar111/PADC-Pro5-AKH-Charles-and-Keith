@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keith.and.charles.xyz.arkarhein.charlesandkeith.viewholders.ProductDetailViewHolder xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_item_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/scarf_detail_top_handle_bag"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x" />
+
+    <ImageView
+        android:id="@+id/iv_product_detail"
+        android:layout_width="@dimen/product_item_width"
+        android:layout_height="@dimen/product_item_height"
+        android:layout_below="@id/tv_item_detail_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ck_bag_black" />
+
+
+</keith.and.charles.xyz.arkarhein.charlesandkeith.viewholders.ProductDetailViewHolder>

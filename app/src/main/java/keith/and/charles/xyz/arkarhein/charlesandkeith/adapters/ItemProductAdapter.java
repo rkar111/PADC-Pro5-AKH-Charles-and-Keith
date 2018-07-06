@@ -8,26 +8,28 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import keith.and.charles.xyz.arkarhein.charlesandkeith.R;
+import keith.and.charles.xyz.arkarhein.charlesandkeith.data.vo.NewProductVO;
+import keith.and.charles.xyz.arkarhein.charlesandkeith.delegates.NewProductDelegate;
+import keith.and.charles.xyz.arkarhein.charlesandkeith.viewholders.BaseViewHolder;
 import keith.and.charles.xyz.arkarhein.charlesandkeith.viewholders.ItemProductViewHolder;
 
-public class ItemProductAdapter extends RecyclerView.Adapter {
-    @NonNull
-    @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        Context context = parent.getContext();
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View itemProductView = inflater.inflate(R.layout.item_products, parent, false);
-        ItemProductViewHolder itemProductViewHolder = new ItemProductViewHolder(itemProductView);
-        return itemProductViewHolder;
+public class ItemProductAdapter extends BaseRecyclerAdapter<BaseViewHolder, NewProductVO> {
+    private NewProductDelegate mNewProductDelegate;
+
+    public ItemProductAdapter(Context context, NewProductDelegate newProductDelegate) {
+        super(context);
+        mNewProductDelegate = newProductDelegate;
     }
 
+    @NonNull
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-
+    public BaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = mLayoutInflator.inflate(R.layout.item_products, parent, false);
+        return new ItemProductViewHolder(view, mNewProductDelegate);
     }
 
     @Override
     public int getItemCount() {
-        return 8;
+        return super.getItemCount();
     }
 }
